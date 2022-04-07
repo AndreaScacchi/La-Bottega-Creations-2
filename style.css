@@ -767,6 +767,10 @@ a {
   padding-bottom: 1rem;
 }*/
 
+.blogs-content .main-title {
+  padding-top: 3rem;
+}
+
 /* Services */
 .services-container h1 {
   text-align: center;
@@ -1501,6 +1505,14 @@ a {
     padding-bottom: 6rem;
   }
 
+  .blogs-content .main-title .bg-text {
+    font-size: 2.5rem;
+}
+
+.blogs-content .main-title {
+  font-size: 1rem;
+}
+
   .contact-content-con {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1709,14 +1721,14 @@ a {
   }
 
   .main-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .main-title h2 span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .main-title h2 .bg-text {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
