@@ -380,7 +380,7 @@ a {
 }
 
 .header-content .right-header .name {
-  font-size: 3rem;
+  /*font-size: 2rem;*/
   font-family: 'Cinzel', sans-serif;
 }
 
@@ -405,6 +405,7 @@ a {
   letter-spacing: 0.07rem;
   line-height: 2;
   font-size: 1rem;
+  margin-top: 2rem;
 }
 
 /*About*/
@@ -1105,8 +1106,8 @@ a {
 
 /* Contact */
 .contact-content-con {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /*display: -webkit-box;
+  display: -ms-flexbox;*/
   display: flex;
   padding-top: 3.5rem;
 }
@@ -1114,7 +1115,7 @@ a {
 .contact-content-con .left-contact {
   -webkit-box-flex: 2;
   -ms-flex: 2;
-  flex: 2;
+  flex: 1.5;
 }
 
 .contact-content-con .left-contact h4 {
@@ -1126,6 +1127,10 @@ a {
 .contact-content-con .left-contact p {
   margin: 1rem 0;
   line-height: 2rem;
+}
+
+.contact-item > .icon em {
+  color: var(--color-secondary);
 }
 
 .contact-content-con .left-contact .contact-info .contact-item {
@@ -1167,6 +1172,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-content-con .left-contact .contact-icon a {
@@ -1218,7 +1225,11 @@ a {
   margin-left: 3rem;
 }
 
-.contact-content-con .right-contact .input-control {
+.contact-content-con .right-contact .contact-img {
+  width: 100%;
+}
+
+/*.contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
 
@@ -1254,7 +1265,7 @@ a {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-}
+}*/
 
 .btn-con {
   display: flex;
@@ -1343,19 +1354,58 @@ a {
   padding-left: 0;
 }
 
+@media only screen and (max-width: 970px) and (min-width: 600px) {
+  .about-para-1, .about-para-2 {
+    padding-right: 5rem;
+  }
+
+  .copy {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about-para-1, .about-para-2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .controlls .control {
+    padding: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .btn-shine {
+    width: 50vw;
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .nav-logo {
+    width: 110%;
+    margin-left: -2rem; 
+  }
+
   header {
     padding: 0 !important;
   }
 
-  .theme-btn {
-    width: 50px;
-    height: 50px;
+  .copy {
+    padding-bottom: 5rem;
   }
 
   .header-content {
     grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
+    /*padding-bottom: 0rem;*/
   }
 
   .left-header .h-shape {
@@ -1371,14 +1421,22 @@ a {
   }
 
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 3rem;
   }
 
   .header-content .left-header .image {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
+  }
+
+  .header-content .left-header .image img {
+    filter: grayscale(0%);
+  }
+
+  .header-content .left-header .image img:hover {
+    filter: grayscale(0);
   }
 
   .controlls {
@@ -1507,6 +1565,10 @@ a {
 }
 
 @media screen and (max-width: 1432px) {
+  .header-content .right-header {
+    padding-right: 7rem;
+  }
+
   .sec1, /*.sec2,*/ .sec3, .sec5 {
     padding: 7rem 11rem;
   }
@@ -1555,7 +1617,7 @@ a {
   }
 
   .header-content .right-header {
-    padding-right: 9rem;
+    padding-right: 7rem;
   }
 }
 
@@ -1610,7 +1672,7 @@ a {
   }
 
   .left-header .image {
-    width: 90% !important;
+    width: 75% /*!important*/;
     margin: 0 auto !important;
   }
 
@@ -1623,7 +1685,7 @@ a {
   }
 
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem;
     text-align: center;
     padding-top: 3rem;
   }
