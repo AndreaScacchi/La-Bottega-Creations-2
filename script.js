@@ -39,6 +39,24 @@ function PageTransitions() {
 
 PageTransitions();
 
+// Button Gem scroll
+$(function () {
+    $(".btn-gem").click(function () {
+        $("html, body").animate({ scrollTop: $("#gallery-about").offset().top },
+            "slow"
+        );
+        return false;
+    });
+});
+
 // Set year date
-const date = document.getElementById("date");
-date.innerHTML = new Date().getFullYear();
+const date = document.querySelectorAll("#date");
+/*date.innerHTML = new Date().getFullYear();*/
+
+function setYear() {
+    for (const year of date) {
+        year.innerHTML = new Date().getFullYear();
+    }
+}
+
+setYear();
