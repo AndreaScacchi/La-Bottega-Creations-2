@@ -1618,6 +1618,100 @@ a {
   }
 }
 
+@media screen and (max-width: 385px) {
+  .aboutUs-btn>a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    width: 80vw;
+  }
+
+  .tdimension {
+    width: 75vw;
+    margin-right: 1rem;
+    margin-left: -2rem;
+
+  }
+
+  .tdimension a {
+    width: 75vw;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .td-img2 a, .td-img5 a, .td-img6 a{
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 840px) {
+  .tdimension {
+    width: 80%;
+  }
+
+  .tdimension a {
+    width: 100%;
+    height: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .td-img2 a, .td-img5 a, .td-img6 a{
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1070px) and (max-width: 1250px) {
+  .about-container .left-about {
+    padding-right: 0.2rem;
+  }
+
+  .about-container .right-about .about-item .abt-text .small-text {
+    font-size: 1.2rem;
+    padding-left: 3rem;
+  }
+
+  .about-container .right-about .about-item .abt-text .small-text::before {
+    width: 2rem;
+  }
+
+  .about-container .right-about .about-item .abt-text .large-text {
+    font-size: 3rem;
+  }
+
+  .about-container .right-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding-left: 5rem;
+    row-gap: 0;
+  }
+
+  .about-container .right-about .about-item {
+    height: 80%;
+    width: 90%;
+    /*padding-left: 2rem;*/
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .blogs {
     grid-template-columns: repeat(2, 1fr);
@@ -1703,6 +1797,16 @@ a {
   }
 }
 
+@media screen and (max-width: 330px) {
+  .about-container .right-about .about-item .abt-text .large-text {
+    font-size: 2rem;
+  }
+
+  .about-container .right-about .about-item .abt-text .small-text {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .sec1, .sec2, .sec3, .sec5 {
     padding: 7rem 3rem;
@@ -1713,7 +1817,10 @@ a {
   }
 
   .about-container .right-about {
-    grid-template-columns: repeat(1, 1fr);
+    /*grid-template-columns: repeat(1, 1fr);*/
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
   }
 
   .timeline {
