@@ -577,13 +577,23 @@ a {
   transform-origin: bottom;
 }
 
-/* Portfolio  */
-.port-text {
+/* Works  */
+@media screen and (max-width: 700px) {
+  .work-text {
+    padding: 2rem 0;
+    padding-right: 3rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .work-text {
   padding: 2rem 0;
   text-align: center;
 }
+}
 
-.port-text>em {
+.work-text>em {
   color: var(--color-secondary);
 }
 
@@ -1728,6 +1738,179 @@ a {
   }
 }
 
+@media only screen and (min-width: 850px) and (max-width: 1150px) {
+  .services-container .services-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 1rem;
+  }
+
+  .services-container>p {
+    font-size: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .first-price-container .first-para-price {
+    font-size: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .services-container .services-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-container .services-section .services-card {
+    margin: 3rem;
+  }
+
+  .services-container>p {
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 5rem;
+  }
+
+  .first-price-container .first-para-price {
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-container>p {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .first-price-container .first-para-price {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .copy-services {
+    margin-bottom: 2rem;
+  }
+
+  .contact-container .contact-content-con .left-contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contact-container .contact-content-con .left-contact .contact-info .contact-item .icon>p {
+    font-size: 0.8rem;
+  }
+
+  .contact-container .contact-content-con .left-contact .contact-info .contact-item .icon {
+    margin-left: -1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .price-div .price-container {
+    width: 270px;
+  }
+
+  .price-div .price-container .price-header {
+    width: 16.8rem;
+    left: -30px;
+  }
+
+  .price-div .price-container .price-header label {
+    font-size: 1rem;
+    padding: 2.5rem;
+  }
+
+  #tab-2:checked ~ .price-header .slider {
+    display: none;
+  }
+
+  .price-div .price-container .price-header .slider {
+    display: none;
+  }
+
+  .price-div .price-container .price-card-area .price-cards .price-row .price-details .price {
+    font-size: 2rem;
+  }
+
+  .price-div .price-container .price-card-area .price-cards .price-row .price-details .price::after {
+    font-size: 1.5rem;
+  }
+
+  .price-div .price-container .div-price-button .price-button {
+    width: 170px;
+    height: 40px;
+    margin-top: 1rem;
+  }
+
+  .price-div .price-container .div-price-button>a:before {
+    top: 50%;
+    font-size: 0.8rem;
+  }
+
+  .price-div .price-container .div-price-button>a:hover:before {
+    top: -30px;
+  }
+
+  .price-div .price-container .div-price-button>a:after {
+    top: 150%;
+  }
+
+  .price-div .price-container .div-price-button>a:hover:after {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .services-container .services-section .services-card {
+    width: 270px;
+  }
+
+  .services-container .services-section .services-card .services-icon {
+    font-size: 4rem;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sec3 .work-text {
+    text-align: center;
+    padding: 0rem;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .portfolios .portfolio-item .hover-items .icons .icon {
+    width: 45px;
+  }
+
+  .portfolios .portfolio-item .hover-items .icons .icon i {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .portfolios .portfolio-item .image {
+    width: 120%;
+    height: 100%;
+    margin-left: -2rem;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .blogs {
     grid-template-columns: repeat(1, 1fr);
@@ -1735,6 +1918,17 @@ a {
 
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*.portfolios .portfolio-item .image img {
+    width: 95%;
+    height: 100%;
+  }*/
+
+  .portfolios .portfolio-item .hover-items {
+    display: none;
+    width: 95%;
+    height: 98.5%;
   }
 }
 
