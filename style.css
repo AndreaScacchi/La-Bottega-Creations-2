@@ -799,7 +799,7 @@ a {
 .services-container .services-section {
   /*min-width: 100px;*/
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
   gap: 0.5em;
   margin: 7rem;
@@ -808,7 +808,7 @@ a {
   width: 300px;
   text-align: center;
   position: relative;
-  cursor: pointer;
+  /*cursor: pointer;*/
   background: #fff;
   /*margin: 0 15px;*/
   border-radius: 20px;
