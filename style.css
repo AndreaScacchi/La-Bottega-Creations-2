@@ -909,7 +909,7 @@ a {
 
 .price-container {
   width: 400px;
-  height: 500px;
+  height: 460px;
   background: #fff;
   border-radius: 16px;
   padding: 30px;
@@ -1822,6 +1822,12 @@ a {
 
   .contact-container .contact-content-con .left-contact .contact-info .contact-item .icon {
     margin-left: -1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price-div .price-container {
+    height: 500px;
   }
 }
 
